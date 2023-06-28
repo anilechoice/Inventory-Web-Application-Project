@@ -1,0 +1,23 @@
+.container {
+    border: 2px solid black;
+    display: grid;
+    grid-auto-columns: minmax(100px, auto);
+}
+h1 {
+    text-align: center;
+}
+.box {
+
+}
+
+#left {
+    grid-column: 1;
+    height: 100%;
+    width: 50%;
+}
+
+#right {
+    grid-column: 2;
+    height: 100%;
+    width: 50%;
+}

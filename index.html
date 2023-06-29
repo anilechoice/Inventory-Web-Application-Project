@@ -4,22 +4,61 @@
         <meta charset="UTF-8">
         <meta http-equix="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles.css";
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-    <header>
-        <h1>Bookstore Inventory</h1>
-    </header>
+        <header>
+            <h1>Bookstore Inventory</h1>
+        </header>
 
         <section class = "container">
 
             <div class = "box" id = "left">1
-                <section class ="avail-books"
-                    <h2>Rock My Soul</h2>
- 
-            </div>
+                <section class="avail-books"> 
+                    <article>
+                        <h2>Things Fall Apart</h2>
+                        <div class="Author">
+                            <h3>Chinua Achebe</h3>
+                        </div>
+                        <div class="Price" >
+                            <p>
+                            $21.99
+                            </p>
+                        </div>
+                        <div class="BookIMG" >
+                            <img src="">
+                        </div>
+                        <h2>As A Man Thinketh</h2>
+                        <div class="Author" >
+                            <h3>James Allen</h3>
+                        </div>
+                        <div class="Price">
+                            <p>
+                                $10.99
+                            </p>
+                        </div>
+                        <div class="BookIMG">
+                            <img src="" >
+                        </div>
+                        <h2>Life Doesn't Frighten Me</h2>
+                        <div class="Author">
+                            <h3>Maya Angelou</h3>
+                        </div>
+                        <div class="Price">
+                            <p>
+                                $20.99
+                            </p>
+                        </div>
+                        <div class="BookIMG">
+                            <img src="" >
+                        </div>
+                    </article>
+
+                </section>
+             </div>
+
             <div class = "box" id = "right">2
-                <form id="New-Book">
+                    <form id="New-Book">
                     <label for= "Title"> Title <span class = "required">*</span></label>
                     <input id = "Title" name = "Title" type = "text" required />
                     <label for= "Author"> Author <span class = "required">*</span></label>
@@ -28,7 +67,7 @@
                     <input id = "Image-URL" name = "Image-URL" type= "url" />
                     <label for="Price"> Price <span class = "required">*</span></label>
                     <input id = "Price" name = "Price" type="text">
-                    <label for="In-Stock"> Availablity  <span class = "required">*</span></label>
+                    <label for="In-Stock"> Availability  <span class = "required">*</span></label>
                     <select name = "In-Stock" id="In-Stock">
                         <option value="In-Stock"> In Stock</option>
                         <option value="Unavailable"> Unavailable</option>

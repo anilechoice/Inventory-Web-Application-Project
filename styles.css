@@ -1,29 +1,95 @@
 .container {
-    border: 2px solid black;
+
     display: grid;
-    grid-auto-columns: minmax(100fr, auto);
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: minmax(100px, auto);
+    column-gap: 150px;
+    background-color: antiquewhite;
+    
+    
+    
+
 }
 header {
-    
+    display: flex;
+    height: 20vh;
+    background: black;
+    color: azure;
+    font-size: xx-large;
+    justify-content: center;
 }
 h1 {
     text-align: center;
 }
-/* .box {
-
-} */
 
 #left {
     grid-column: 1;
-    height: 100fr;
-    width: 50%;
+    height: 100%;
+    width: 100%;
+    padding-top: 25px;
 }
 
 #right {
     grid-column: 2;
-    height: 100fr;
-    width: 25%;
+    height: 100%;
+    width: 100%;
+    padding-top: ;
 }
 img {
     width: 150px;
+    image-rendering: optimizeQuality;
+    margin-left: 5px;
+
+ 
+}
+
+
+h1,
+h2,
+h3,
+p {
+    font-family: monospace;
+}
+
+
+.new-book-form {
+    font-family: monospace;
+}
+
+form input,
+form label {
+    box-sizing: border-box;
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+form input {
+    border: 1px solid rgb(208, 174, 121);
+    padding: 8px;
+}
+
+form button[type="submit"],
+button {
+    background: goldenrod;
+    border: none;
+    border-radius: 5px;
+    color: antiquewhite;
+    margin: 10px 5px;
+    font-family: monospace;
+}
+
+form button[type="submit"]:hover,
+button:hover {
+    background: burlywood;
+}
+
+#inStock {
+    background-color: goldenrod;
+    border: none;
+    border-radius: 5px;
+    color: antiquewhite;
+    font-family: monospace;
+
 }

@@ -1,46 +1,153 @@
-.container {
+@media (min-width: 800px) {
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0%;
+    }
+    .container {
 
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: minmax(100px, auto);
-    column-gap: 150px;
-    background-color: antiquewhite;
-    
-    
-    
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: minmax(100px, auto);
+        column-gap: 120px;
+        background-color: antiquewhite;
+        
+    }
+    header {
+        display: flex;
+        height: 20vh;
+        background: black;
+        color: antiquewhite;
+        font-size: xx-large;
+        justify-content: center;
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+    }
 
+    #left {
+        grid-column: 1;
+        height: 100%;
+        width: 100%;
+        padding-top: 25px;
+        margin-left: 5%;
+    }
+
+    #right {
+        grid-column: 2;
+        height: 100%;
+        width: 100%;
+        padding-top: 25px;
+    }
+    img {
+        width: 150px;
+        image-rendering: optimizeQuality;
+        margin-left: 5px;
+        padding-inline-start: 20px;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    p {
+        font-family: monospace;
+    }
+
+
+    .new-book-form {
+        font-family: monospace;
+    }
+    #title {
+        width: 500px;
+    }
+
+    #author {
+        width: 500px;
+    }
+
+    #image {
+        width: 500px;
+    }
+
+    #price {
+        width: 125px
+    }
+
+    form input,
+    form label {
+        box-sizing: border-box;
+        display: block;
+        margin: 25px 0;
+        width: 100%;
+        background-color: antiquewhite;
+        scroll-margin-right: 75%;
+    }
+
+    form input {
+        border: 1px solid rgb(208, 174, 121);
+        padding: 8px;
+    }
+
+    form button[type="submit"],
+    button {
+        background: goldenrod;
+        border: none;
+        border-radius: 5px;
+        color: antiquewhite;
+        margin: 10px 5px;
+        font-family: monospace;
+        padding: 10px;
+    }
+
+    form button[type="submit"]:hover,
+    button:hover {
+        background: burlywood;
+    }
+
+    #inStock {
+        background-color: goldenrod;
+        border: none;
+        border-radius: 5px;
+        color: antiquewhite;
+        font-family: monospace;
+
+    }
 }
-header {
+@media (max-width: 799px) and (min-width: 400px) {
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0%;
+    }
+ .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 100px;
+    background-color: antiquewhite;
+    text-align: center;
+ }
+
+ header {
     display: flex;
-    height: 20vh;
+    height: 15vh;
     background: black;
-    color: azure;
-    font-size: xx-large;
+    color: antiquewhite;
+    font-size: x-large;
     justify-content: center;
+    width: 100%;
 }
 h1 {
     text-align: center;
 }
 
-#left {
-    grid-column: 1;
-    height: 100%;
-    width: 100%;
-    padding-top: 25px;
-}
-
-#right {
-    grid-column: 2;
-    height: 100%;
-    width: 100%;
-    padding-top: ;
-}
 img {
-    width: 150px;
+    width: 125px;
     image-rendering: optimizeQuality;
     margin-left: 5px;
-
- 
+    padding-inline-start: 80px;
+   ;
 }
 
 
@@ -55,7 +162,24 @@ p {
 .new-book-form {
     font-family: monospace;
 }
+#title {
+    width: 400px;
+    margin: auto
 
+}
+#author {
+    width: 400px;
+    margin: auto;
+}
+#image {
+    width: 400px;
+    margin: auto;
+}
+#price {
+    width: 125px;
+    margin: auto;
+
+}
 form input,
 form label {
     box-sizing: border-box;
@@ -68,6 +192,9 @@ form label {
 form input {
     border: 1px solid rgb(208, 174, 121);
     padding: 8px;
+    font-family: monospace;
+    align-content: center;
+    
 }
 
 form button[type="submit"],
@@ -77,6 +204,7 @@ button {
     border-radius: 5px;
     color: antiquewhite;
     margin: 10px 5px;
+    padding: 10px;
     font-family: monospace;
 }
 
@@ -92,4 +220,5 @@ button:hover {
     color: antiquewhite;
     font-family: monospace;
 
+    }
 }

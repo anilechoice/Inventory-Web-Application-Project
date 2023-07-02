@@ -70,9 +70,42 @@ function generateBookInfo(title, author, price, inStock, image) {
 
 const article = bookTemplate(title, author, price, inStock, image);
 
-const li = document.querySelector("article");
-li.append(article);
-
+const div = document.querySelector("article");
+div.append(article);
 
 }
 
+function removeBook() {
+    book = document.querySelector("article")
+    console.log(remove)
+    article.append(remove)
+
+    remove.addEventListener("click", (event) =>{
+        book.remove();
+    })
+}
+
+let firstBook = document.querySelector("article.book1")
+let removeButton1 = document.querySelector("button.book1")
+let availableBooks = document.querySelector("section.avail-books")
+removeButton1.addEventListener("click", (event) => {{
+    firstBook.remove()
+}
+    return availableBooks;
+})
+
+let secondBook = document.querySelector("article.book2")
+let removeButton2 = document.querySelector("button.book2");
+removeButton2.addEventListener("click", (event) => {{
+    secondBook.remove()
+}
+    return availableBooks;
+})
+
+let thirdBook = document.querySelector("article.book3")
+let removeButton3 = document.querySelector("button.book3");
+removeButton3.addEventListener("click", (event) => {{
+    thirdBook.remove()
+}
+    return availableBooks;
+})
